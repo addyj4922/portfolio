@@ -56,7 +56,7 @@ const defaultExperiences: Experience[] = [
 
 export default function ExperienceSection({ experiences = defaultExperiences }: ExperienceSectionProps) {
   return (
-    <section id="experience" className="py-16 lg:py-24 bg-muted/30">
+    <section id="experience" className="py-8 lg:py-12 bg-muted/30">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-center lg:text-left" data-testid="heading-experience">
           Work Experience

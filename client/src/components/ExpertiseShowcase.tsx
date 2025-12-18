@@ -3,7 +3,7 @@ import { SiKubernetes, SiTerraform, SiDocker, SiAmazonwebservices } from "react-
 
 export default function ExpertiseShowcase() {
   return (
-    <section className="py-16 lg:py-24 relative overflow-hidden">
+    <section className="py-8 lg:py-12 relative overflow-hidden scroll-mt-12 lg:scroll-mt-16">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
       
       <div className="max-w-6xl mx-auto px-4 lg:px-8 relative">
@@ -19,7 +19,7 @@ export default function ExpertiseShowcase() {
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative p-8 rounded-xl border border-border bg-card/80 backdrop-blur-sm h-full">
+            <div className="relative p-8 rounded-xl border border-border bg-card/80 backdrop-blur-sm h-full flex flex-col">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/20">
                   <Cloud className="w-8 h-8 text-cyan-400" />
@@ -32,31 +32,32 @@ export default function ExpertiseShowcase() {
                 Terraform modules, I create resilient, cost-efficient platforms that empower teams 
                 to ship faster.
               </p>
-
-              <div className="grid grid-cols-3 gap-4">
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <SiKubernetes className="w-8 h-8 text-blue-400" />
-                  <span className="text-xs text-muted-foreground">Kubernetes</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <SiTerraform className="w-8 h-8 text-purple-400" />
-                  <span className="text-xs text-muted-foreground">Terraform</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <SiDocker className="w-8 h-8 text-blue-300" />
-                  <span className="text-xs text-muted-foreground">Docker</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <SiAmazonwebservices className="w-8 h-8 text-orange-400" />
-                  <span className="text-xs text-muted-foreground">AWS</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <Cloud className="w-8 h-8 text-blue-500" />
-                  <span className="text-xs text-muted-foreground">Azure</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <Container className="w-8 h-8 text-red-400" />
-                  <span className="text-xs text-muted-foreground">OpenShift</span>
+              <div className="mt-auto">
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <SiKubernetes className="w-8 h-8 text-blue-400" />
+                    <span className="text-xs text-muted-foreground">Kubernetes</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <SiTerraform className="w-8 h-8 text-purple-400" />
+                    <span className="text-xs text-muted-foreground">Terraform</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <SiDocker className="w-8 h-8 text-blue-300" />
+                    <span className="text-xs text-muted-foreground">Docker</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <SiAmazonwebservices className="w-8 h-8 text-orange-400" />
+                    <span className="text-xs text-muted-foreground">AWS</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <Cloud className="w-8 h-8 text-blue-500" />
+                    <span className="text-xs text-muted-foreground">Azure</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <Container className="w-8 h-8 text-red-400" />
+                    <span className="text-xs text-muted-foreground">OpenShift</span>
+                  </div>
                 </div>
               </div>
 
@@ -71,7 +72,7 @@ export default function ExpertiseShowcase() {
 
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative p-8 rounded-xl border border-border bg-card/80 backdrop-blur-sm h-full">
+            <div className="relative p-8 rounded-xl border border-border bg-card/80 backdrop-blur-sm h-full flex flex-col">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 rounded-xl bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/20">
                   <Code className="w-8 h-8 text-green-400" />
@@ -85,33 +86,34 @@ export default function ExpertiseShowcase() {
                 developers actually want to use.
               </p>
 
-              <div className="grid grid-cols-3 gap-4">
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <Code className="w-8 h-8 text-purple-500" />
-                  <span className="text-xs text-muted-foreground">C# / .NET</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <Server className="w-8 h-8 text-blue-400" />
-                  <span className="text-xs text-muted-foreground">REST APIs</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <Database className="w-8 h-8 text-yellow-500" />
-                  <span className="text-xs text-muted-foreground">SQL Server</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <GitBranch className="w-8 h-8 text-orange-500" />
-                  <span className="text-xs text-muted-foreground">Git</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <Database className="w-8 h-8 text-blue-300" />
-                  <span className="text-xs text-muted-foreground">PostgreSQL</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                  <Server className="w-8 h-8 text-green-500" />
-                  <span className="text-xs text-muted-foreground">Microservices</span>
+              <div className="mt-auto">
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <Code className="w-8 h-8 text-purple-500" />
+                    <span className="text-xs text-muted-foreground">C# / .NET</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <Server className="w-8 h-8 text-blue-400" />
+                    <span className="text-xs text-muted-foreground">REST APIs</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <Database className="w-8 h-8 text-yellow-500" />
+                    <span className="text-xs text-muted-foreground">SQL Server</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <GitBranch className="w-8 h-8 text-orange-500" />
+                    <span className="text-xs text-muted-foreground">Git</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <Database className="w-8 h-8 text-blue-300" />
+                    <span className="text-xs text-muted-foreground">PostgreSQL</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                    <Server className="w-8 h-8 text-green-500" />
+                    <span className="text-xs text-muted-foreground">Microservices</span>
+                  </div>
                 </div>
               </div>
-
               <div className="mt-6 pt-6 border-t border-border">
                 <div className="flex items-center gap-2 text-sm text-green-400">
                   <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />

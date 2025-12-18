@@ -187,7 +187,7 @@ function ExperienceCard({ experience, index }: { experience: Experience; index: 
 
 export default function ExperienceAccordion({ experiences = defaultExperiences }: ExperienceAccordionProps) {
   return (
-    <section id="experience" className="py-16 lg:py-24">
+    <section id="experience" className="py-8 lg:py-12 scroll-mt-12 lg:scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between gap-4 mb-12 flex-wrap">
           <h2 className="text-3xl lg:text-4xl font-bold" data-testid="heading-experience">

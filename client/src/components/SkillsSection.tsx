@@ -66,7 +66,7 @@ const defaultCategories: SkillCategory[] = [
 
 export default function SkillsSection({ categories = defaultCategories }: SkillsSectionProps) {
   return (
-    <section id="skills" className="py-16 lg:py-24">
+    <section id="skills" className="py-8 lg:py-12 scroll-mt-12 lg:scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-center lg:text-left" data-testid="heading-skills">
           Skills & Expertise

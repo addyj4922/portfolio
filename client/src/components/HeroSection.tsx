@@ -27,7 +27,7 @@ export default function HeroSection({
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl" />
       
-      <div className="max-w-6xl mx-auto px-4 lg:px-8 py-16 lg:py-24 w-full relative">
+      <div className="max-w-6xl mx-auto px-4 lg:px-8 py-8 lg:py-12 w-full relative">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="flex-shrink-0 relative">
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-cyan-500/20 rounded-full blur-2xl" />

@@ -27,7 +27,7 @@ export default function Navigation({ resumeUrl = "/attached_assets/Aditya_Jain_R
   };
 
   const navLinks = [
-    { label: "About", id: "about" },
+    { label: "About", id: "hero" },
     { label: "Experience", id: "experience" },
     { label: "Skills", id: "skills" },
     { label: "Education", id: "education" },
