@@ -189,12 +189,9 @@ export default function ExperienceAccordion({ experiences = defaultExperiences }
   return (
     <section id="experience" className="py-8 lg:py-12 scroll-mt-12 lg:scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between gap-4 mb-6 flex-wrap">
-          <h2 className="text-3xl lg:text-4xl font-bold" data-testid="heading-experience">
-            Work Experience
-          </h2>
-          <p className="text-muted-foreground text-sm">Hover to expand</p>
-        </div>
+        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-left" data-testid="heading-experience">
+          Work Experience
+        </h2>
 
         <div className="space-y-4">
           {experiences.map((exp, index) => (
