@@ -1,5 +1,5 @@
 import { Cloud, Code, Server, Database, GitBranch, Container } from "lucide-react";
-import { SiKubernetes, SiTerraform, SiDocker, SiAmazonwebservices } from "react-icons/si";
+import { SiKubernetes, SiTerraform, SiDocker, SiAmazonwebservices, SiGithubactions} from "react-icons/si";
 
 export default function ExpertiseShowcase() {
   return (
@@ -18,7 +18,7 @@ export default function ExpertiseShowcase() {
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/40 to-blue-500/40 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
             <div className="relative p-8 rounded-xl border border-border bg-card/80 backdrop-blur-sm h-full flex flex-col">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/20">
@@ -55,8 +55,8 @@ export default function ExpertiseShowcase() {
                     <span className="text-xs text-muted-foreground">Azure</span>
                   </div>
                   <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                    <Container className="w-8 h-8 text-red-400" />
-                    <span className="text-xs text-muted-foreground">OpenShift</span>
+                    <SiGithubactions className="w-8 h-8 text-cyan-400" />
+                    <span className="text-xs text-muted-foreground">CI/CD</span>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default function ExpertiseShowcase() {
           </div>
 
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute -inset-2 bg-gradient-to-r from-green-400/40 to-emerald-500/40 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="relative p-8 rounded-xl border border-border bg-card/80 backdrop-blur-sm h-full flex flex-col">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 rounded-xl bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/20">

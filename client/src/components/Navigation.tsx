@@ -6,7 +6,7 @@ interface NavigationProps {
   resumeUrl?: string;
 }
 
-export default function Navigation({ resumeUrl = "/attached_assets/Aditya_Jain_Resume_1765543367997.pdf" }: NavigationProps) {
+export default function Navigation({ resumeUrl = "/attached_assets/Aditya_Jain_Resume.pdf" }: NavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
