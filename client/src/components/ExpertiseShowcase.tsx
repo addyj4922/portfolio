@@ -3,7 +3,7 @@ import { SiKubernetes, SiTerraform, SiDocker, SiAmazonwebservices, SiGithubactio
 
 export default function ExpertiseShowcase() {
   return (
-    <section className="py-8 lg:py-12 relative overflow-hidden scroll-mt-12 lg:scroll-mt-16">
+    <section id="about" className="py-8 lg:py-12 relative overflow-hidden scroll-mt-12 lg:scroll-mt-16">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
       
       <div className="max-w-6xl mx-auto px-4 lg:px-8 relative">
