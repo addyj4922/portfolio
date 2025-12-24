@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import ThemeToggle from "./ThemeToggle"; 
 
 interface NavigationProps {
   resumeUrl?: string;
@@ -62,6 +63,7 @@ export default function Navigation({ resumeUrl = "/attached_assets/Aditya_Jain_R
                 {link.label}
               </button>
             ))}
+            <ThemeToggle />
             <Button asChild data-testid="button-download-resume">
               <a href={resumeUrl} download>
                 <Download className="w-4 h-4 mr-2" />
@@ -69,7 +71,6 @@ export default function Navigation({ resumeUrl = "/attached_assets/Aditya_Jain_R
               </a>
             </Button>
           </div>
-
           <Button
             variant="ghost"
             size="icon"
@@ -95,6 +96,7 @@ export default function Navigation({ resumeUrl = "/attached_assets/Aditya_Jain_R
                 </button>
               ))}
               <div className="px-4 pt-2">
+                <ThemeToggle />
                 <Button asChild className="w-full" data-testid="button-mobile-download-resume">
                   <a href={resumeUrl} download>
                     <Download className="w-4 h-4 mr-2" />
