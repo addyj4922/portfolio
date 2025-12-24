@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
-import ThemeToggle from "./ThemeToggle"; 
+import ThemeToggle from "./ThemeToggle";
 
 interface NavigationProps {
   resumeUrl?: string;
@@ -95,9 +95,11 @@ export default function Navigation({ resumeUrl = "/attached_assets/Aditya_Jain_R
                   {link.label}
                 </button>
               ))}
-              <div className="px-4 pt-2">
+              <div className="px-4 py-2">
                 <ThemeToggle />
-                <Button asChild className="w-full" data-testid="button-mobile-download-resume">
+              </div>
+              <div className="px-4 pt-2 flex items-center gap-2">
+                <Button asChild className="flex-1" data-testid="button-mobile-download-resume">
                   <a href={resumeUrl} download>
                     <Download className="w-4 h-4 mr-2" />
                     Download Resume
