@@ -26,13 +26,13 @@ const defaultEducation: Education[] = [
 
 export default function EducationSection({ education = defaultEducation }: EducationSectionProps) {
   return (
-    <section id="education" className="py-8 lg:py-12">
+    <section id="education" className="py-16 lg:py-20">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-left" data-testid="heading-education">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-center lg:text-left" data-testid="heading-education">
           Education
         </h2>
 
-        <div className="grid gap-6 max-w-2xl mx-auto lg:mx-0" style={{ maxWidth: "66.67%" }}>
+        <div className="grid gap-6 max-w-3xl mx-auto lg:mx-0">
           {education.map((edu, index) => (
             <Card key={index} className="hover-elevate transition-all duration-300" data-testid={`card-education-${index}`}>
               <CardContent className="p-6 lg:p-8">
@@ -62,7 +62,7 @@ export default function EducationSection({ education = defaultEducation }: Educa
                     {edu.specialization && (
                       <div className="flex items-center gap-2">
                         <span className="text-sm text-muted-foreground">Specialization:</span>
-                        <Badge variant="secondary" className="font-mono text-xs">
+                        <Badge variant="secondary" className="font-mono text-xs whitespace-normal break-words">
                           {edu.specialization}
                         </Badge>
                       </div>
