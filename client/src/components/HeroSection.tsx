@@ -58,7 +58,7 @@ export default function HeroSection({
               {title}
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6 max-w-2xl">
-              Specializing in cloud-native platforms with hands-on experience in Kubernetes, 
+              abcdsciws Specializing in cloud-native platforms with hands-on experience in Kubernetes, 
               OpenShift, Helm-based deployments, and Infrastructure as Code using Terraform. 
               Building resilient, cost-efficient, and high-performing systems.
             </p>
